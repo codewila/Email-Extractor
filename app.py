@@ -199,4 +199,5 @@ if st.button("🚀 Start Fast Crawl", type="primary"):
         csv = df.to_csv(index=False).encode('utf-8')
         st.download_button("⬇️ Download CSV", csv, f"emails_{base_domain}.csv", "text/csv")
     else: 
+
         st.warning("No emails found.")
